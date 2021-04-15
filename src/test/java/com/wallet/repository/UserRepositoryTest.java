@@ -31,7 +31,7 @@ public class UserRepositoryTest {
 	public void setup() {
 		
 		User u = new User();
-		u.setName("Set up Name");
+		u.setName("Ricardo");
 		u.setPassword("123");
 		u.setEmail(EMAIL);
 		
