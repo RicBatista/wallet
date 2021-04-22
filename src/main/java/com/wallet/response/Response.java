@@ -7,8 +7,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Getter
-@Setter
+
 @NoArgsConstructor
 public class Response<T> {
 	
@@ -21,6 +20,20 @@ public class Response<T> {
 		}
 		return errors;
 	}
+
+	public T getData() {
+		return data;
+	}
+
+	public void setData(T data) {
+		this.data = data;
+	}
+
+	public void setErrors(List<String> errors) {
+		this.errors = errors;
+	}
+	
+	
 	
 
 }

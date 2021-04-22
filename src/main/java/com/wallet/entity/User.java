@@ -1,7 +1,6 @@
 package com.wallet.entity;
 
 import java.io.Serializable;
-import java.util.Objects;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -17,10 +16,8 @@ import com.wallet.util.enums.RoleEnum;
 
 import lombok.Data;
 
-
-
-@Entity
 @Data
+@Entity
 @Table(name = "users")
 public class User implements Serializable{
 	
@@ -37,7 +34,5 @@ public class User implements Serializable{
 	@NotNull
 	@Enumerated(EnumType.STRING)
 	private RoleEnum role;
-	
-
 	
 }
