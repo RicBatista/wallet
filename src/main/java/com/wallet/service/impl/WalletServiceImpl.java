@@ -15,7 +15,6 @@ public class WalletServiceImpl implements WalletService{
 	
 	@Override
 	public Wallet save(Wallet w) {
-		// TODO Auto-generated method stub
 		return repository.save(w);
 	}
 
